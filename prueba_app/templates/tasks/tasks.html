@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Tasks</h1>
+
+
+{% for task in Tasks %}
+
+<div>
+    <h2>
+        {{task.title}}
+        {% if task.done == False%}
+        <p> 𝥷 </p>
+
+        {% else %}
+
+        <p> ✓ </p>
+
+        {% endif %}
+    </h2>
+    <p>{{task.description}}</p>
+    <p>Project: {{task.project}}</p>
+</div>
+
+<div>
+    <button>
+        Editar
+    </button>
+    <button>
+        Borrar
+    </button>
+    <button>
+        ✅ Listo
+    </button>
+</div>
+
+{% endfor %}
+
+
+
+{% endblock %}

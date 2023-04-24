@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(217, 243, 234);
+    color: darkblue;
+}
+
+.navbar{
+    background-color: aqua;
+    padding: 5px 10px;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+    color: cadetblue;
+}
+
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.card {
+    background: whitesmoke;
+    color: blue;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.input{
+    background: wheat;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}

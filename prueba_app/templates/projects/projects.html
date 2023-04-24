@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Projects</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illum soluta adipisci reiciendis aperiam molestiae qui est odit provident amet, quaerat vitae, voluptatibus iusto ipsa. Veritatis veniam beatae itaque vero aliquid? Deserunt labore tempora assumenda, ab necessitatibus atque, nostrum dolorem incidunt quo natus explicabo dolor mollitia impedit nobis, placeat repudiandae!</p>
+
+{% for project in projects %}
+    <div class="card">
+        <a href="{% url 'project_detail' project.id %}">
+
+            <h1>{{project.name}}</h1>
+
+        </a>
+
+    </div>
+
+{% endfor %}
+
+{% endblock %}
